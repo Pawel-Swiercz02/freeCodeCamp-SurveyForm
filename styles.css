@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background-image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #F3F3F3;
+    width:700px;
+    max-width: 70vw;
+    min-width: 400px;
+    margin: 50px auto 0 auto;
+}
+
+header {
+    display:block;
+    font-family: 'latolight';
+    text-align: center;
+}
+
+#title {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header > p {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+main {
+    display:block;
+    background-color: rgba(40, 39, 70, 90%);
+    padding:50px;
+    font-family: 'latoregular';
+    font-size:1.2em;
+    border-radius: 5px;
+}
+
+input, select, textarea {
+    width:100%;
+    margin:0.6em 0 0 -2px;
+    font-size: 1em;
+}
+
+input, select {
+    height: 2em;
+    border-radius: 4px ;
+    padding: 1px 2px 1px 10px;
+}
+
+textarea {
+    height: unset;
+    border-radius: 1px;
+    padding:10px 2px 1px 10px;
+}
+
+/* label + two inputs below fix checkboxes and radio inputs / label - display: block; / input rad & check - width: unset; display: inline;*/
+
+label {                                                 
+    display: block;
+}
+
+.label-margin, .fieldset-margin {
+    margin-top: 1.5em;
+}
+
+
+fieldset > label:first-of-type {
+    margin-top: 0.4em;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: unset;
+    display: inline;
+    vertical-align: middle;
+    margin: 0 4px 6px 1px;
+    width:20px;
+}
+
+.margin1 {
+    margin-bottom: -8px;
+}
+
+input[type="submit"] {
+   height:2.5em;
+   margin-top: 2em;
+   margin-bottom: 1em;
+   background-color: #37AF65;
+   color: #F3F3F3;
+   border: none;
+   font-size: 0.9em;
+   border-radius: 1px;
+}

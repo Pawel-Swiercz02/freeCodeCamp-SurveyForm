@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Paweł Świercz">
+  <meta name="description" content="Survey Form for project number 1 in Responsive Web Design">
+  <meta name="keywords" content="Survey, freeCodeCamp, Project">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="Font-Lato/stylesheet.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p><em>Thank you for taking the time to help us improve the platform</em></p>
+  </header>
+  <main>
+    <form method="post" action="#add_link_later">
+        <label for="form-name">Name<input id="form-name" name="form-name" type="text" placeholder="Enter your name" required></label>
+        <label class="label-margin" for="form-email">Email<input id="form-email" name="form-email" type="email" placeholder="Enter your email" required></label>
+        <label class="label-margin" for="form-age">Age (optional)<input id="form-age" name="form-age" type="number" min="1" max="120" placeholder="Age"></label>
+        <label class="label-margin" for="form-current-role">Which option best describes your current role?
+            <select id="form-current-role" name="form-current-role" required>
+                <option value="">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Other</option>
+            </select>
+        </label>
+        <fieldset class="fieldset-margin">
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+            <label class="margin1" for="recommendation-definitely"><input id="recommendation-definitely" name="form-recommendation" type="radio" value="definitely" checked> Definitely</label>
+            <label class="margin1" for="recommendation-maybe"><input id="recommendation-maybe" name="form-recommendation" value="maybe" type="radio"> Maybe</label>
+            <label class="margin1" for="recommendation-notsure"><input id="recommendation-notsure" name="form-recommendation" value="notsure" type="radio"> Not Sure</label>
+        </fieldset>
+        <label class="label-margin" for="form-favFeature">What is your favorite feature of freeCodeCamp?
+            <select id="form-favFeature" name="form-favFeature" required>
+                <option value="">Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+            </select>
+        </label>
+        <fieldset class="fieldset-margin">
+            <legend>What would you like to see improved? (Check all that apply)</legend>
+            <label class="margin1" for="improve-front"><input id="improve-front" name="improvements" value="frontend" type="checkbox"> Front-end Projects</label>
+            <label class="margin1" for="improve-back"><input id="improve-back" name="improvements" value="backend" type="checkbox"> Back-end Projects</label>
+            <label class="margin1" for="improve-data"><input id="improve-data" name="improvements" value="datavisualization" type="checkbox"> Data Visualization</label>
+            <label class="margin1" for="improve-chall"><input id="improve-chall" name="improvements" value="challenges" type="checkbox"> Challenges</label>
+            <label class="margin1" for="improve-opensrc"><input id="improve-opensrc" name="improvements" value="opensource" type="checkbox"> Open Source Community</label>
+            <label class="margin1" for="improve-git"><input id="improve-git" name="improvements" value="gitter" type="checkbox"> Gitter help rooms</label>
+            <label class="margin1" for="improve-videos"><input id="improve-videos" name="improvements" value="videos" type="checkbox"> Videos</label>
+            <label class="margin1" for="improve-citymeet"><input id="improve-citymeet" name="improvements" value="citymeetups" type="checkbox"> City Meetups</label>
+            <label class="margin1" for="improve-wiki"><input id="improve-wiki" name="improvements" value="wiki" type="checkbox"> Wiki</label>
+            <label class="margin1" for="improve-forum"><input id="improve-forum" name="improvements" value="forum" type="checkbox"> Forum</label>
+            <label class="margin1" for="improve-courses"><input id="improve-courses" name="improvements" value="courses" type="checkbox"> Additional Courses</label>
+        </fieldset>
+        <label class="label-margin" for="form-comments">Any comments or suggestions?
+            <textarea id="form-comments" name="form-comments" rows="7" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+  </main>
+</body>
+</html>
