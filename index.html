@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Paweł Świercz">
   <meta name="description" content="Survey Form for project number 1 in Responsive Web Design">
-  <meta name="keywords" content="Survey, freeCodeCamp, Project">
   <title>Survey Form</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="Font-Lato/stylesheet.css">
@@ -13,10 +12,15 @@
 <body>
   <header>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p><em>Thank you for taking the time to help us improve the platform</em></p>
+    <p id="sub-title">Thank you for taking the time to help us improve the platform</p>
   </header>
   <main>
-    <form method="post" action="#add_link_later">
+    <script>
+      function alertBox() {
+        alert("Survey submitted. Thank you!");
+      }
+      </script>
+    <form method="post" action="survey-submit.html" onsubmit="alertBox(); return false">
         <label for="form-name">Name<input id="form-name" name="form-name" type="text" placeholder="Enter your name" required></label>
         <label class="label-margin" for="form-email">Email<input id="form-email" name="form-email" type="email" placeholder="Enter your email" required></label>
         <label class="label-margin" for="form-age">Age (optional)<input id="form-age" name="form-age" type="number" min="1" max="120" placeholder="Age"></label>

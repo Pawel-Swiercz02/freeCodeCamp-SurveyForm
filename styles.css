@@ -17,9 +17,9 @@ body {
 }
 
 header {
-    display:block;
-    font-family: 'latolight';
     text-align: center;
+    font-family: 'latolight';
+    font-style: italic;
 }
 
 #title {
@@ -28,14 +28,13 @@ header {
     margin-bottom: 10px;
 }
 
-header > p {
+#sub-title {
     font-size: 1.2em;
     letter-spacing: 1px;
     margin-bottom: 30px;
 }
 
 main {
-    display:block;
     background-color: rgba(40, 39, 70, 90%);
     padding:50px;
     font-family: 'latoregular';
@@ -51,7 +50,7 @@ input, select, textarea {
 
 input, select {
     height: 2em;
-    border-radius: 4px ;
+    border-radius: 4px;
     padding: 1px 2px 1px 10px;
 }
 
@@ -60,8 +59,6 @@ textarea {
     border-radius: 1px;
     padding:10px 2px 1px 10px;
 }
-
-/* label + two inputs below fix checkboxes and radio inputs / label - display: block; / input rad & check - width: unset; display: inline;*/
 
 label {                                                 
     display: block;
@@ -101,4 +98,13 @@ input[type="submit"] {
    border: none;
    font-size: 0.9em;
    border-radius: 1px;
+}
+
+@media only screen and (max-width: 625px) {
+    #title {
+        font-size: 1.7em;
+    }
+    #sub-title {
+        font-size: 1.1em;
+    }
 }
